@@ -8,6 +8,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* cor */
+    background-color: #E5E5E5;
     /* fonte */
 }

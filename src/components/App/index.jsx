@@ -1,6 +1,11 @@
+
+import Header from "../Header/";
+
 function App() {
     return(
-        <h1>Ola mundo</h1>
+        <>
+            <Header />
+        </>
     );
 }
 export default App;
