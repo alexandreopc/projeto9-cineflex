@@ -1,10 +1,17 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Header from "../Header/";
+import TelaPricipal from "../TelaPricipal";
 
 function App() {
     return(
         <>
-            <Header />
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<TelaPricipal />} />
+                
+            </Routes>
+        </BrowserRouter>
+
         </>
     );
 }

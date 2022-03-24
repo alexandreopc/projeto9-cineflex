@@ -7,7 +7,13 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    padding-top: 67px;
     background-color: #E5E5E5;
     /* fonte */
+}
+
+.root{
+    width: 100%;
+    height: 100%;
 }
