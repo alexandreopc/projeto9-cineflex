@@ -1,0 +1,95 @@
+.Assentos {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+}
+/* FAZER PADDING RIGHT E MARGIN LEFT NOS ASSENTOS IGUAL OS FILMES EM CARTAZ */
+.Assentos h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    font-size: 24px;
+    color: #293845;
+}
+
+.Assentos .listaAssentos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Assentos .legenda {
+    display: flex;
+    justify-content: space-evenly;
+    /* height: 33px; */
+    margin-bottom: 40px;
+}
+
+.Assentos .ex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Assentos .assento {  
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+
+.Assentos .selecionado {  
+    background: #8DD7CF;
+    border: 1px solid #1AAE9E;
+}
+.Assentos .disponivel {  
+    background: #C3CFD9;
+    border: 1px solid #7B8B99;
+}
+.Assentos .indisponivel {  
+    background: #FBE192;
+    border: 1px solid #F7C52B;
+}
+
+.Assentos form {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.Assentos input {
+    /* display: flex;
+    flex-direction:column;
+    align-items: center; */
+    width: 327px;
+    height: 51px;
+    margin-bottom: 7px;
+    border: 1px solid #D5D5D5;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.Assentos .botao {
+    display: flex;
+    justify-content: center;
+   
+}
+.Assentos button {
+    width: 225px;
+    height: 42px;
+    background: #E8833A;
+    border-radius: 3px;
+    border: none;
+
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.Assentos article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+    margin-bottom: 18px;
+    font-size: 11px;
+}

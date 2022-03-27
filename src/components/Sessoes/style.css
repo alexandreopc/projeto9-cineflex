@@ -1,0 +1,40 @@
+.Sessoes {
+    width: 100%;
+    height: 100%;
+    padding-right: 28px;
+}
+
+
+.Sessoes h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    font-size: 24px;
+    color: #293845;
+}
+
+.Sessoes p {
+    font-size: 20px;
+}
+
+.Sessoes button {
+    width: 83px;
+    height: 43px;
+    margin-top: 20px;
+    margin-right: 8px;
+    background: #E8833A;
+    border-radius: 3px;
+    border: none;
+}
+
+.Sessoes span {
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.Sessoes article {
+    height: 111px;
+    margin-left: 28px;
+}

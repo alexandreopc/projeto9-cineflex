@@ -40,7 +40,6 @@ export default function TelaPricipal() {
                     );
                 })}
                 </div>
-                
             </main>
         </div>
     );
