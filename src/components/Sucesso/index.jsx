@@ -9,8 +9,6 @@ export default function Sucesso() {
 
     const { infos:{title}, dia:{date, weekday}, hora, nome, cpf, pedido } = location.state
     
-    console.log(formataCPF(cpf));
-    
     function formataCPF(cpf){
         cpf = cpf.replace(/[^\d]/g, "");
         return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");

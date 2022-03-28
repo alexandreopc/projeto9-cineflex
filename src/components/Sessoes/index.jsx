@@ -24,8 +24,6 @@ export default function Sessoes() {
         })
     }, []);
 
-    console.log(infos);
-
     return (
         <div className="Sessoes">
             <Header />

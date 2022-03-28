@@ -33,7 +33,6 @@ export default function Assentos() {
             setInfos(data.movie)
             setDia(data.day)
             setHora(data.name)
-            console.log(data)
         })
         promise.catch((erro)=> {
             console.log("deu ruim",erro);
@@ -54,7 +53,6 @@ export default function Assentos() {
             cpf: cpf
         });
         promise.then((resposta)=> {
-            console.log(resposta)
             navigate("/sucesso", {state: {infos, dia, hora, nome, cpf, pedido, } })
         });
         promise.catch((erro)=> console.log("deu ruim", erro));
@@ -69,10 +67,7 @@ export default function Assentos() {
                 {assentos.map((info,indice)=> {
                     const {id, name, isAvailable} = info;
                     return isAvailable ? (
-                        <article className="assento disponivel" key={id} onClick={()=> { 
-                            adicionaCadeira(name)
-                            console.log(pedido)
-                             }}>  
+                        <article className="assento disponivel" key={id}>  
                             <p>{name}</p>
                         </article>
                     ): (

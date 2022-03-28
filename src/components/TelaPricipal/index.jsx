@@ -20,10 +20,6 @@ export default function TelaPricipal() {
     })
     }, []);
 
-    // filmes.map((filme) => {
-    //     console.log(filme.posterURL);
-    // })
-    
     return(
         <div className="TelaPricipal">
             <Header />
