@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110px;
+    height: 70px;
     font-size: 24px;
     color: #293845;
 }
@@ -70,6 +70,7 @@
 }
 
 .Assentos .botao {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
    

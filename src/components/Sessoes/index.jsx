@@ -3,25 +3,28 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
 import Header from "../Header";
+import Footer from '../Footer';
 
 import "./style.css";
 
 export default function Sessoes() {
     const params = useParams();
     const [sessoes, setSessoes] = useState([]);
+    const [infos, setInfos] = useState([]);
 
     useEffect(()=> {
         const promise = axios.get(`https://mock-api.driven.com.br/api/v5/cineflex/movies/${params.idFilme}/showtimes`);
         promise.then((resposta)=> {
             const {data} = resposta;
             setSessoes(data.days);
+            setInfos(data);
         })
         promise.catch((erro)=> {
             console.log(erro);
         })
     }, []);
 
-    console.log(sessoes);
+    console.log(infos);
 
     return (
         <div className="Sessoes">
@@ -49,6 +52,12 @@ export default function Sessoes() {
                 })}
                 </div>
             </main>
+            <Footer 
+                src={infos.posterURL}
+                titulo={infos.title}
+                dia=""
+                hora=""
+            />
         </div>
     );
 }
